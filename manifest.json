@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "KanShift",
+  "description": "Convert Kanji to Hiragana, Katakana, or Romaji",
+  "version": "2.0",
+  "action": {
+    "default_popup": "ks.html",
+    "default_icon": "ks.png"
+  },
+  "icons": { "16": "ks.png" },
+  "permissions": [
+    "contextMenus",
+    "activeTab",
+    "storage",
+    "system.display"
+  ],
+  "background": {
+    "service_worker": "scripts/background.js"
+  }
+}

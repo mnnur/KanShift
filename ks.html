@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>KanShift - Convert Kanji to Hiragana/Katakana/Romaji</title>
+  <script src="./scripts/kuroshiro.min.js"></script>
+  <script src="./scripts/kuroshiro-analyzer-kuromoji.min.js"></script>
+  <link rel="stylesheet" href="./styles/popup.css">
+</head>
+<body>
+  <h1>Kanji Converter</h1>
+
+  <div class="form">
+    <label for="japan-input">Japanese Text:</label>
+    <textarea id="japan-input" rows="3"></textarea>
+
+    <label for="convert-type">Convert To:</label>
+    <select id="convert-type">
+      <option value="hiragana">Hiragana</option>
+      <option value="katakana">Katakana</option>
+      <option value="romaji">Romaji</option>
+    </select>
+
+    <button id="buttonConvert">Convert</button>
+
+    <label for="result-input">Result:</label>
+    <textarea id="result-input" rows="3" readonly></textarea>
+  </div>
+
+   <script src="./scripts/popup.js"></script>
+</body>
+</html>
